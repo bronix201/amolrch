@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nuestro Contador de Amor</title>
+<link rel="stylesheet" href="../proyecto codigo html/pag/style.css">
+</head>
+<body>
+    <div class="app-container">
+    <div class="header">
+    <div class="heart-icon">❤</div>
+    <h1>Nuestro Contador de Amor</h1>
+    <p>Cada día es una nueva aventura juntos</p>
+    </div>
+    
+    <div class="content">
+    <div class="counter-container">
+    <div class="counter-bg"></div>
+    <div class="counter-label">Llevamos desde aquel 14 de abril</div>
+    
+    <div class="achievement-badge" id="yearBadge">
+    ¡Feliz Aniversario! ❤
+    </div>
+    
+    <div class="time-stats">
+    <div class="time-stat">
+    <div class="stat-value" id="yearsCounter">0</div>
+    <div class="stat-label">años</div>
+    </div>
+    <div class="time-stat">
+    <div class="stat-value" id="monthsCounter">0</div>
+    <div class="stat-label">meses</div>
+    </div>
+    <div class="time-stat">
+    <div class="stat-value" id="weeksCounter">0</div>
+    <div class="stat-label">semanas</div>
+    </div>
+    <div class="time-stat">
+    <div class="stat-value" id="daysCounter">0</div>
+    <div class="stat-label">días</div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="message-section">
+    <h2 class="section-title">
+    <span>❤</span> Mensaje para cada aniversario
+    </h2>
+    <textarea id="anniversaryMessage" placeholder="Escribe aquí el mensaje especial que quieres que aparezca cada mes..."></textarea>
+    <button class="btn" id="saveMessageBtn">
+    <span>💾</span> Guardar Mensaje
+    </button>
+    </div>
+    
+    <div class="notification-section">
+    <h2 class="section-title">
+    <span>🔔</span> Notificaciones
+    </h2>
+    <p>Recibe una notificación cada mes en nuestro aniversario</p>
+    
+    <div class="notification-status">
+    <div>
+    <span class="status-indicator" id="statusIndicator"></span>
+    <span id="statusText">Notificaciones desactivadas</span>
+    </div>
+    <button class="btn btn-secondary" id="notificationBtn">
+    Activar
+    </button>
+    </div>
+    
+    <div class="date-info">
+    Próxima notificación: <span id="nextNotificationDate">14 de mayo</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="modal" id="anniversaryModal">
+    <div class="modal-content">
+    <span class="close-modal" id="closeModal">&times;</span>
+    <h2 style="color: var(--primary-color); margin-bottom: 15px;" id="modalTitle">¡Feliz Mesiversario!</h2>
+    <div style="font-size: 5rem; margin: 20px 0;">❤</div>
+    <p id="modalMessage" style="margin-bottom: 20px; font-size: 1.1rem;"></p>
+    <button class="btn" id="closeModalBtn">¡Gracias!</button>
+    </div>
+    </div>
+<script src="../proyecto codigo html/pag/java.js"></script>
+</body>
+</html>
